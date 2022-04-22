@@ -1,0 +1,747 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow-x: hidden;
+}
+
+
+
+.contaner {
+    /*max-width: 1800px;*/
+    margin-top: calc(3px + (10 - 3) * ((110vw - 320px) / (1800 - 320)));
+}
+
+p {
+    text-align: center;
+    margin: calc(4px + (15 - 4) * ((110vw - 320px) / (1800 - 320)));
+}
+
+.name {
+    float: left;
+    width: 30%;
+    height: calc(16px + (65 - 16) * ((110vw - 320px) / (1800 - 320)));
+    padding: 0;
+    text-align: center;
+    border-bottom: 2px ridge black;
+    border-top: 2px ridge black;
+    border-right: 2px ridge black;
+    font-weight: bolder;
+    font-size: calc(6px + (25 - 6) * ((110vw - 320px) / (1800 - 320)));
+}
+
+.btn {
+    height: calc(15px + (65 - 15) * ((110vw - 320px) / (1800 - 320)));
+    border-bottom: 2px ridge black;
+    border-top: 2px ridge black;    
+}
+
+.btn2 {
+    margin-top: calc(1px + (16 - 1) * ((110vw - 320px) / (1800 - 320)));
+}
+
+.btn1 {
+    font-size: calc(3px + (12 - 3) * ((110vw - 320px) / (1800 - 320)));
+
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 0 calc(6px + (25 - 6) * ((110vw - 320px) / (1800 - 320)));
+    height: calc(8px + (30 - 8) * ((110vw - 320px) / (1800 - 320)));
+    border-radius: calc(4px + (15 - 4) * ((110vw - 320px) / (1800 - 320))); 
+    border: none;
+    margin-right: calc(3px + (10 - 3) * ((110vw - 320px) / (1800 - 320))); 
+}
+
+button:hover  {
+    background-color: violet; /*#f573f5*/
+}
+
+.content {
+    /*max-width: 1800px;*/
+    margin-top: calc(5px + (20 - 5) * ((110vw - 320px) / (1800 - 320)));
+    display: table;
+    border-spacing: calc(5px + (20 - 5) * ((110vw - 320px) / (1800 - 320))) 0;
+    margin-left: calc((-5px) + (-20 + 5) * ((110vw - 320px) / (1800 - 320)));
+    margin-right: calc((-5px) + (-20 + 5) * ((110vw - 320px) / (1800 - 320)));
+}
+
+.banner {
+    display: table-cell;
+    width: 60%;
+    height: calc(163px + (650 - 163) * ((110vw - 320px) / (1800 - 320)));
+    margin-right: calc(3px + (10 - 3) * ((110vw - 320px) / (1800 - 320)));
+    background-color: violet;
+    color: black;
+    border-radius: 0 calc(63px + (250 - 63) * ((110vw - 320px) / (1800 - 320))) 0 0;
+}
+
+.max_banner {
+    margin-top: calc(25px + (100 - 25) * ((110vw - 320px) / (1800 - 320)));
+    margin-left: calc(8px + (30 - 8) * ((110vw - 320px) / (1800 - 320)));
+    font-weight: bold;
+    font-size: calc(15px + (60 - 15) * ((110vw - 320px) / (1800 - 320)));
+    color: white;
+}
+
+.min_banner {
+    margin-top: 25%;
+    margin-left: calc(8px + (30 - 8) * ((110vw - 320px) / (1800 - 320)));
+    font-size: 20px calc(5px + (20 - 5) * ((110vw - 320px) / (1800 - 320)));
+    color: white;
+}
+
+.photo {
+    display: table-cell;
+    width: calc(175px + (700 - 175) * ((110vw - 320px) / (1800 - 320)));
+    height: calc(163px + (650 - 163) * ((110vw - 320px) / (1800 - 320)));
+    background: url(photo/bottom1.jpg);                                               /* !!!!!!    175*163   !!!!  */
+    background-position: calc(110px + (700 - 110) * ((110vw - 320px) / (1800 - 320))) calc(98px + (650 - 98) * ((110vw - 320px) / (1800 - 320))); /*100% 100%*/
+    background-repeat: inherit;
+    /*background-size: contain;*/
+    border-radius: 0 0 calc(63px + (250 - 63) * ((110vw - 320px) / (1800 - 320))) 0;
+}
+
+.bottom {
+    max-width: 100%;
+    height: calc(16px + (65 - 16) * ((110vw - 320px) / (1800 - 320)));
+    border-bottom: 2px ridge black;
+    border-top: 2px ridge black;
+    margin-top: calc(3px + (10 - 3) * ((110vw - 320px) / (1800 - 320)));
+}
+
+.niz {
+    font-size: calc(9px + (35 - 9) * ((110vw - 320px) / (1800 - 320)));
+    font-weight: bold;
+    margin-top: 0;
+    text-align: center;
+    margin-left: -200px; /*calc((-50px) + (-200 + 50) * ((110vw - 320px) / (1800 - 320)));*/
+    margin-right: -200px; /*calc((-50px) + (-200 + 50) * ((110vw - 320px) / (1800 - 320)));*/
+}
+
+.black_list {
+    display: inline-block;
+    width: 100%;
+    height: calc(299px + (1195 - 299) * ((110vw - 320px) / (1800 - 320)));
+    border-radius: 0 0 calc(63px + (250 - 63) * ((110vw - 320px) / (1800 - 320))) 0;
+    margin-top: calc(3px + (10 - 3) * ((110vw - 320px) / (1800 - 320)));
+    background-color: black;
+}
+
+ul {
+    margin-left: calc(8px + (30 - 8) * ((110vw - 320px) / (1800 - 320)));
+}
+
+li {
+    color: violet;
+    list-style-type: disc;
+    padding-top: calc(8px + (30 - 8) * ((110vw - 320px) / (1800 - 320)));
+    font-size: calc(6px + (25 - 6) * ((110vw - 320px) / (1800 - 320)));
+    font-weight: bold;
+}
+
+span {
+    color: white;
+}
+
+.my_text{
+    color: white;
+    margin-left: calc(175px + (700 - 175) * ((110vw - 320px) / (1800 - 320)));
+    margin-top: calc(13px + (50 - 13) * ((110vw - 320px) / (1800 - 320)));
+    text-indent: calc(6px + (25 - 6) * ((110vw - 320px) / (1800 - 320)));
+    font-size: calc(5px + (18 - 5) * ((110vw - 320px) / (1800 - 320)));
+}
+
+/*БЛОК С ДАТАМИ И СОБЫТИЯМИ*/
+
+.blok_1{
+    position: absolute;
+    color: white;
+    margin-top: calc(25px + (100 - 25) * ((110vw - 320px) / (1800 - 320)));
+    width: calc(450px + (1800 - 450) * ((110vw - 320px) / (1800 - 320)));
+    margin-left: calc(75px + (300 - 75) * ((110vw - 320px) / (1800 - 320)));
+}
+
+.my_a:link {
+    text-decoration: none;
+    color: white;
+}
+
+.my_a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.my_a:active {
+    text-decoration: none;
+    color: white;
+}
+.my_a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.label_1 {
+    position: absolute;
+    margin-left: calc(25px + (100 - 25) * ((110vw - 320px) / (1800 - 320)));
+    transition-duration: 1s;
+}
+
+.label_1:hover {
+    text-shadow: 0px 0px calc(5px + (20 - 5) * ((110vw - 320px) / (1800 - 320))) white;
+}
+
+.label_2 {
+    position: absolute;
+    margin-left: calc(125px + (500 - 125) * ((110vw - 320px) / (1800 - 320)));
+    opacity: .3;
+    transition-duration: 1s;
+}
+
+.label_2:hover {
+    opacity: 1;
+}
+
+.label_3 {
+    position: absolute;
+    margin-left: calc(225px + (900 - 225) * ((110vw - 320px) / (1800 - 320)));
+    opacity: .3;
+    transition-duration: 1s;
+}
+
+.label_3:hover {
+    opacity: 1;
+}
+
+.line {
+    width: calc(100px + (400 - 100) * ((110vw - 320px) / (1800 - 320)));
+    height: 2px;
+    background-color: white;
+}
+
+.ear {
+    font-size: calc(25px + (100 - 25) * ((110vw - 320px) / (1800 - 320)));
+}
+
+.event
+{
+    margin-top: calc(3px + (10 - 3) * ((110vw - 320px) / (1800 - 320)));
+}
+
+/* КОНЕЦ БЛОКА С ДАТАМИ И СОБЫТИЯМИ */
+
+.blocks {
+    position: relative;
+    width: 0; /*700*/
+    height: 0;
+    margin-top: calc(58px + (270 - 58) * ((110vw - 320px) / (1800 - 320))); /*70*/
+    padding-left: calc(28px + (110 - 28) * ((110vw - 320px) / (1800 - 320)));
+}
+
+.one {
+    position: absolute;
+    width: calc(85px + (340 - 85) * ((110vw - 320px) / (1800 - 320)));
+    height: calc(20px + (80 - 20) * ((110vw - 320px) / (1800 - 320)));
+    border-radius: calc(20px + (80 - 20) * ((110vw - 320px) / (1800 - 320)));
+    background-color: yellow;
+    text-align: center;
+    font-size: calc(10px + (40 - 10) * ((110vw - 320px) / (1800 - 320)));
+    margin-top: calc(48px + (430 - 48) * ((110vw - 320px) / (1800 - 320))); /*-30px*/
+    margin-left: calc(8px + (30 - 8) * ((110vw - 320px) / (1800 - 320)));
+}
+
+.two {
+    position: absolute;
+    width: calc(85px + (340 - 85) * ((110vw - 320px) / (1800 - 320)));
+    height: calc(20px + (80 - 20) * ((110vw - 320px) / (1800 - 320)));
+    border-radius: calc(20px + (80 - 20) * ((110vw - 320px) / (1800 - 320)));
+    background-color: blue;
+    color: white;
+    text-align: center;
+    font-size: calc(10px + (40 - 10) * ((110vw - 320px) / (1800 - 320)));
+    margin-top: calc(35px + (380 - 35) * ((110vw - 320px) / (1800 - 320)));
+    margin-left: calc(68px + (270 - 68) * ((110vw - 320px) / (1800 - 320)));
+    -moz-transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+
+.three {
+    position: absolute;
+    width: calc(85px + (340 - 85) * ((110vw - 320px) / (1800 - 320)));
+    height: calc(20px + (80 - 20) * ((110vw - 320px) / (1800 - 320)));
+    border-radius: calc(20px + (80 - 20) * ((110vw - 320px) / (1800 - 320)));
+    background-color: black;
+    border: 2px ridge white;
+    color: white;
+    text-align: center;
+    font-size: calc(10px + (40 - 10) * ((110vw - 320px) / (1800 - 320)));
+    margin-top: calc(35px + (380 - 35) * ((110vw - 320px) / (1800 - 320)));
+    margin-left: calc(138px + (550 - 138) * ((110vw - 320px) / (1800 - 320)));
+    -moz-transform: rotate(16deg);
+    -webkit-transform: rotate(16deg);
+    -o-transform: rotate(16deg);
+    -ms-transform: rotate(16deg);
+    transform: rotate(16deg);
+}
+
+.four {
+    position: absolute;
+    width: calc(85px + (340 - 85) * ((110vw - 320px) / (1800 - 320)));
+    height: calc(20px + (80 - 20) * ((110vw - 320px) / (1800 - 320)));
+    border-radius: calc(20px + (80 - 20) * ((110vw - 320px) / (1800 - 320)));
+    background-color: violet;
+    color: white;
+    text-align: center;
+    font-size: calc(10px + (40 - 10) * ((110vw - 320px) / (1800 - 320)));
+    margin-top: calc(7px + (268 - 7) * ((110vw - 320px) / (1800 - 320)));
+    margin-left: calc(102px + (408 - 102) * ((110vw - 320px) / (1800 - 320)));
+    -moz-transform: rotate(-12deg);
+    -webkit-transform: rotate(-12deg);
+    -o-transform: rotate(-12deg);
+    -ms-transform: rotate(-12deg);
+    transform: rotate(-12deg);
+}
+
+.five {
+    position: absolute;
+    width: calc(85px + (340 - 85) * ((110vw - 320px) / (1800 - 320)));
+    height: calc(20px + (80 - 20) * ((110vw - 320px) / (1800 - 320)));
+    border-radius: calc(20px + (80 - 20) * ((110vw - 320px) / (1800 - 320)));
+    background-color: blue;
+    color: white;
+    text-align: center;
+    font-size: calc(10px + (40 - 10) * ((110vw - 320px) / (1800 - 320)));
+    margin-top: calc(34px + (376 - 34) * ((110vw - 320px) / (1800 - 320)));
+    margin-left: calc(200px + (800 - 200) * ((110vw - 320px) / (1800 - 320)));
+    -moz-transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+
+.six {
+    position: absolute;
+    width: calc(85px + (340 - 85) * ((110vw - 320px) / (1800 - 320)));
+    height: calc(20px + (80 - 20) * ((110vw - 320px) / (1800 - 320)));
+    border-radius: calc(20px + (80 - 20) * ((110vw - 320px) / (1800 - 320)));
+    background-color: black;
+    border: 2px ridge white;
+    color: white;
+    text-align: center;
+    font-size: calc(10px + (40 - 10) * ((110vw - 320px) / (1800 - 320)));
+    margin-top: calc(1px + (244 - 1) * ((110vw - 320px) / (1800 - 320)));
+    margin-left: calc(185px + (740 - 185) * ((110vw - 320px) / (1800 - 320)));
+    -moz-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+}
+
+/* с фигурой */
+
+.box {
+    /*display: inline-block;*/
+    height: calc(225px + (900 - 225) * ((110vw - 320px) / (1800 - 320)));
+    border-bottom: 2px ridge black;
+}
+
+.text_about {
+    position: absolute;
+    margin-left: calc(25px + (200 - 25) * ((110vw - 320px) / (1800 - 320)));
+    margin-top: calc(18px + (70 - 18) * ((110vw - 320px) / (1800 - 320)));
+    width: calc(300px + (1200 - 300) * ((110vw - 320px) / (1800 - 320)));
+    font-size: calc(10px + (40 - 10) * ((110vw - 320px) / (1800 - 320)));
+    z-index: 3;
+}
+
+.he {
+    position: absolute;
+    margin-left: calc(238px + (950 - 238) * ((110vw - 320px) / (1800 - 320)));
+    margin-top: calc(58px + (230 - 58) * ((110vw - 320px) / (1800 - 320)));
+    z-index: 2;
+}
+
+.him {
+    width: calc(160px + (639 - 160) * ((110vw - 320px) / (1800 - 320)));
+    height: calc(167px + (669 - 167) * ((110vw - 320px) / (1800 - 320)));
+}
+
+.poet {
+    position: absolute;
+    margin-left: calc(25px + (100 - 25) * ((110vw - 320px) / (1800 - 320)));
+    margin-top: calc(210px + (840 - 210) * ((110vw - 320px) / (1800 - 320)));
+    font-weight: bold;
+    font-size: calc(5px + (20 - 5) * ((110vw - 320px) / (1800 - 320)));
+}
+
+.rot {
+    position: absolute;
+    margin-left: calc(100px + (400 - 100) * ((110vw - 320px) / (1800 - 320)));
+    margin-top: calc(28px + (110 - 28) * ((110vw - 320px) / (1800 - 320)));
+    -moz-transform: skew(-30deg, 0deg);
+    -webkit-transform: skew(-30deg, 0deg);
+    -o-transform: skew(-30deg, 0deg);
+    -ms-transform: skew(-30deg, 0deg);
+    transform: skew(-30deg, 0deg);
+    z-index: 1;
+}
+
+.figur {
+    height: calc(75px + (300 - 75) * ((110vw - 320px) / (1800 - 320))); 
+    width: calc(175px + (700 - 175) * ((110vw - 320px) / (1800 - 320))); 
+    margin: calc(25px + (100 - 25) * ((110vw - 320px) / (1800 - 320))) auto;
+    position: relative;
+    transform: rotate(180deg);
+}
+    
+.figur:before, 
+.figur:after {
+    content: "";
+    height: 100%; 
+    width: 50%;
+    position: absolute; 
+    top: 0;
+    background: violet; 
+    border: 1px ridge violet;   
+}
+    
+.figur:before {
+    left: 0;
+    transform: skew(0deg, 15deg);
+    -webkit-transform: skew(0deg, 15deg);
+    -o-transform: skew(0deg, 15deg);
+    -moz-transform: skew(0deg, 15deg);
+    
+}
+    
+.figur:after {
+    right: 0;
+    transform: skew(0deg, -15deg);
+    -webkit-transform: skew(0deg, -15deg);
+    -o-transform: skew(0deg, -15deg);
+    -moz-transform: skew(0deg, -15deg);
+}
+
+/* с фигурой */
+
+.max_banner_down {
+    margin-top: calc(13px + (50 - 13) * ((110vw - 320px) / (1800 - 320)));
+    margin-left: calc(8px + (30 - 8) * ((110vw - 320px) / (1800 - 320)));
+    font-weight: bold;
+    font-size: calc(10px + (40 - 10) * ((110vw - 320px) / (1800 - 320)));
+    color: white;
+}
+
+.btn_go {
+    margin-top: calc(5px + (20 - 5) * ((110vw - 320px) / (1800 - 320)));
+    margin-left: calc(8px + (30 - 8) * ((110vw - 320px) / (1800 - 320)));
+    float: left;
+    font-size: calc(5px + (20 - 5) * ((110vw - 320px) / (1800 - 320)));
+    background-color: white;
+    color: black;
+    height: calc(9px + (35 - 9) * ((110vw - 320px) / (1800 - 320)));
+    border-radius: calc(9px + (35 - 9) * ((110vw - 320px) / (1800 - 320)));
+    text-align: center;
+    transition-duration: 1s;
+}
+
+.btn_go:hover {
+    background-color: black;
+    color: violet;
+}
+
+.youtube {
+    width: calc(25px + (100 - 25) * ((110vw - 320px) / (1800 - 320)));
+}
+
+.whatsapp {
+    width: calc(30px + (120 - 30) * ((110vw - 320px) / (1800 - 320)));
+}
+
+.telegram {
+    width: calc(25px + (100 - 25) * ((110vw - 320px) / (1800 - 320)));
+}
+
+.min_banner_down {
+    margin-top: 35%;
+    margin-left: calc(8px + (30 - 8) * ((110vw - 320px) / (1800 - 320)));
+    font-size: calc(8px + (30 - 8) * ((110vw - 320px) / (1800 - 320)));
+    color: white;
+}
+
+.black_span {
+    color: black;
+}
+
+.foto_list {
+    display: inline-block;
+    background-color: white;
+    margin-left: calc(18px + (70 - 18) * ((110vw - 320px) / (1800 - 320)));
+}
+
+.portfolio {
+    width: calc(75px + (300 - 75) * ((110vw - 320px) / (1800 - 320)));
+    margin: calc(3px + (10 - 3) * ((110vw - 320px) / (1800 - 320)));
+    border-radius: calc(8px + (30 - 8) * ((110vw - 320px) / (1800 - 320)));
+}
+
+.foto_top {
+    float: left;
+    border-radius: calc(5px + (20 - 5) * ((110vw - 320px) / (1800 - 320)));
+    margin: calc(3px + (10 - 3) * ((110vw - 320px) / (1800 - 320)));
+}
+
+.foto_bottom {
+    float: left;
+    border-radius: calc(5px + (20 - 5) * ((110vw - 320px) / (1800 - 320)));
+    margin: calc(3px + (10 - 3) * ((110vw - 320px) / (1800 - 320)));
+}
+
+.his_name {
+    margin-left: 0;
+    margin-top: 0;
+}
+
+/* АККОРДЕОН */
+
+.accord {
+    display: block;
+}
+
+.faq {
+    width: calc(350px + (1400 - 350) * ((110vw - 320px) / (1800 - 320)));
+    margin: calc(5px + (20 - 5) * ((110vw - 320px) / (1800 - 320))) auto;
+}
+
+.questoin {
+    text-align: left;
+}
+
+.faq_item {
+    border-top: 2px solid black;
+    font-size: calc(8px + (30 - 8) * ((110vw - 320px) / (1800 - 320)));
+}
+
+.faq_input {
+    width: 0;
+    height: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    position: absolute;
+}
+
+.faq_input:checked ~ .faq_text {
+    display: block;
+}
+
+.faq_input:checked ~ .faq_titel {
+    color: violet;
+}
+
+.faq_input:checked ~ .faq_titel::after {
+    content: '\2193';
+}
+
+.faq_titel {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    padding: calc(3px + (10 - 3) * ((110vw - 320px) / (1800 - 320))) calc(3px + (10 - 3) * ((110vw - 320px) / (1800 - 320)));
+}
+
+.faq_titel::after {
+    content: '\2192';
+    display: block;
+    position: absolute;
+    right: calc(4px + (15 - 4) * ((110vw - 320px) / (1800 - 320)));
+    transform: translateY(-100%);
+}
+
+.faq_text {
+    display: none;
+    padding: calc(3px + (10 - 3) * ((110vw - 320px) / (1800 - 320))) calc(3px + (10 - 3) * ((110vw - 320px) / (1800 - 320)));
+    font-size: calc(5px + (20 - 5) * ((110vw - 320px) / (1800 - 320)));
+}
+
+
+/* КОНЕЦ АККОРДЕОНА */
+
+.btn_question {
+    width: calc(325px + (1300 - 325) * ((110vw - 320px) / (1800 - 320)));
+    height: calc(13px + (50 - 13) * ((110vw - 320px) / (1800 - 320)));
+    border-radius: calc(13px + (50 - 13) * ((110vw - 320px) / (1800 - 320)));
+    background-color: violet;
+    color: white;
+    text-align: center;
+    font-size: calc(8px + (30 - 8) * ((110vw - 320px) / (1800 - 320)));
+    margin: calc(33px + (10 - 33) * ((110vw - 320px) / (1800 - 320))) auto;
+}
+
+.photo-1 {
+    display: table-cell;
+    width: calc(175px + (700 - 175) * ((110vw - 320px) / (1800 - 320)));
+    height: calc(163px + (650 - 163) * ((110vw - 320px) / (1800 - 320)));
+    background: url(photo/top1.jpg);
+    background-position: calc(175px + (700 - 175) * ((110vw - 320px) / (1800 - 320))) calc(163px + (650 - 163) * ((110vw - 320px) / (1800 - 320))); /*100% 100%*/
+    background-repeat: inherit;
+    border-radius: 0 0 calc(63px + (250 - 63) * ((110vw - 320px) / (1800 - 320))) 0;
+}
+
+/* СКРОЛЛ */
+
+
+/* W3C standard
+   сейчас только для Firefox */
+   * {
+    scrollbar-width: thin;
+    scrollbar-color: violet white;
+  }
+  
+  /* для Chrome/Edge/Safari */
+  *::-webkit-scrollbar {
+    height: 12px; /* 12px */
+    width: 12px;
+  }
+  *::-webkit-scrollbar-track {
+    background: white;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: violet;
+    border-radius: 10px;
+    border: 3px solid white;
+  }
+
+/* КОНЕЦ СКРОЛЛА*/
+
+
+/* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv */
+/*
+@media (max-width: 1800px) {
+    
+    .name {
+        
+        height: calc(15px + (65 - 15) * ((110vw - 320px) / (1800 - 320))); 
+        font-size: calc(5px + (25 - 5) * ((110vw - 320px) / (1800 - 320)));
+    }
+    .btn {
+        height: calc(15px + (65 - 15) * ((110vw - 320px) / (1800 - 320)));
+    }
+    button {
+        height: calc(10px + (30 - 10) * ((110vw - 320px) / (1800 - 320)));
+        padding: 0 calc(5px + (25 - 5) * ((110vw - 320px) / (1800 - 320)));
+        margin-right: calc(2px + (10 - 2) * ((110vw - 320px) / (1800 - 320)));
+        border-radius: calc(3px + (15 - 3) * ((110vw - 320px) / (1800 - 320)));
+    }
+    p {
+        margin: calc(1px + (15 - 1) * ((110vw - 320px) / (1800 - 320)));
+    }
+    .banner {
+        height: calc(110px + (650 - 110) * ((110vw - 320px) / (1800 - 320)));
+        border-radius: 0 calc(80px + (250 - 80) * ((110vw - 320px) / (1800 - 320))) 0 0;
+    }
+    .photo {
+        height: calc(110px + (650 - 110) * ((110vw - 320px) / (1800 - 320)));
+        width: calc(110px + (700 - 110) * ((110vw - 320px) / (1800 - 320)));
+        border-radius: 0 0 calc(80px + (250 - 80) * ((110vw - 320px) / (1800 - 320))) 0;
+    }
+    .max_banner {
+        margin-top: calc(25px + (100 - 25) * ((110vw - 320px) / (1800 - 320)));
+        margin-left: calc(10px + (30 - 10) * ((110vw - 320px) / (1800 - 320)));
+        font-size: calc(12px + (60 - 12) * ((110vw - 320px) / (1800 - 320)));
+    }
+    .min_banner {
+        margin-left: calc(10px + (30 - 10) * ((110vw - 320px) / (1800 - 320)));
+        font-size: calc(3px + (20 - 3) * ((110vw - 320px) / (1800 - 320)));
+    }
+    .bottom {
+        height: calc(15px + (65 - 15) * ((110vw - 320px) / (1800 - 320)));
+    }
+    .niz {
+        font-size: calc(12px + (35 - 12) * ((110vw - 320px) / (1800 - 320)));
+        margin-left: calc((-120px) + (-100 - 20) * ((110vw - 320px) / (1800 - 320)));
+        margin-right: calc((-120px) + (-100 - 20) * ((110vw - 320px) / (1800 - 320)));
+    }
+    ul {
+        margin-left: calc(10px + (30 - 10) * ((110vw - 320px) / (1800 - 320)));
+    }
+    li {
+        padding-top: calc(10px + (30 - 10) * ((110vw - 320px) / (1800 - 320)));
+        font-size: calc(5px + (25 - 5) * ((110vw - 320px) / (1800 - 320)));
+    }
+    .my_text {
+        margin-left: calc(80px + (700 - 80) * ((110vw - 320px) / (1800 - 320)));
+        margin-top: calc(10px + (60 - 10) * ((110vw - 320px) / (1800 - 320)));
+        text-indent: calc(5px + (25 - 5) * ((110vw - 320px) / (1800 - 320)));
+        font-size: calc(5px + (18 - 5) * ((110vw - 320px) / (1800 - 320)));;
+    }
+    .black_list {
+        height: calc(400px + (1200 - 400) * ((110vw - 320px) / (1800 - 320)));
+        border-radius: 0 0 calc(80px + (250 - 80) * ((110vw - 320px) / (1800 - 320))) 0;
+        margin-top: calc(2px + (10 - 2) * ((110vw - 320px) / (1800 - 320)));
+    }
+    .blocks {
+        margin-top: calc(90px + (270 - 90) * ((110vw - 320px) / (1800 - 320)));
+        padding-left: calc(3px + (110 - 3) * ((110vw - 320px) / (1800 - 320))); 
+    }
+    .one {
+        width: calc(112px + (340 - 112) * ((110vw - 320px) / (1800 - 320)));
+        height: calc(25px + (80 - 25) * ((110vw - 320px) / (1800 - 320)));
+        border-radius: calc(25px + (80 - 25) * ((110vw - 320px) / (1800 - 320)));
+        font-size: calc(12px + (40 - 12) * ((110vw - 320px) / (1800 - 320)));
+        margin-top: calc(150px + (430 - 150) * ((110vw - 320px) / (1800 - 320)));
+        margin-left: calc(10px + (30 - 10) * ((110vw - 320px) / (1800 - 320)));
+    }
+    .two {
+        width: calc(112px + (340 - 112) * ((110vw - 320px) / (1800 - 320)));
+        height: calc(25px + (80 - 25) * ((110vw - 320px) / (1800 - 320)));
+        border-radius: calc(25px + (80 - 25) * ((110vw - 320px) / (1800 - 320)));
+        font-size: calc(12px + (40 - 12) * ((110vw - 320px) / (1800 - 320)));
+ 
+        margin-top: calc(135px + (375 - 135) * ((115vw - 320px) / (1800 - 320)));
+        margin-left: calc(90px + (270 - 90) * ((115vw - 320px) / (1800 - 320)));
+    }
+    .three {
+        width: calc(112px + (340 - 112) * ((110vw - 320px) / (1800 - 320)));
+        height: calc(25px + (80 - 25) * ((110vw - 320px) / (1800 - 320)));
+        border-radius: calc(25px + (80 - 25) * ((110vw - 320px) / (1800 - 320)));
+        font-size: calc(12px + (40 - 12) * ((110vw - 320px) / (1800 - 320)));
+        margin-top: calc(126px + (380 - 126) * ((115vw - 320px) / (1800 - 320)));
+        margin-left: calc(183px + (550 - 183) * ((115vw - 320px) / (1800 - 320)));
+    }
+    .four {
+        width: calc(112px + (340 - 112) * ((110vw - 320px) / (1800 - 320)));
+        height: calc(25px + (80 - 25) * ((110vw - 320px) / (1800 - 320)));
+        border-radius: calc(25px + (80 - 25) * ((110vw - 320px) / (1800 - 320)));
+        font-size: calc(12px + (40 - 12) * ((110vw - 320px) / (1800 - 320)));
+        margin-top: calc(89px + (268 - 89) * ((115vw - 320px) / (1800 - 320)));
+        margin-left: calc(136px + (408 - 136) * ((115vw - 320px) / (1800 - 320)));
+    }
+    .five {
+        width: calc(112px + (340 - 112) * ((110vw - 320px) / (1800 - 320)));
+        height: calc(25px + (80 - 25) * ((110vw - 320px) / (1800 - 320)));
+        border-radius: calc(25px + (80 - 25) * ((110vw - 320px) / (1800 - 320)));
+        font-size: calc(12px + (40 - 12) * ((110vw - 320px) / (1800 - 320)));
+        margin-top: calc(125px + (376 - 125) * ((115vw - 320px) / (1800 - 320)));
+        margin-left: calc(267px + (800 - 267) * ((115vw - 320px) / (1800 - 320)));
+    }
+    .six {
+        width: calc(112px + (340 - 112) * ((110vw - 320px) / (1800 - 320)));
+        height: calc(25px + (80 - 25) * ((110vw - 320px) / (1800 - 320)));
+        border-radius: calc(25px + (80 - 25) * ((110vw - 320px) / (1800 - 320)));
+        font-size: calc(12px + (40 - 12) * ((110vw - 320px) / (1800 - 320)));
+        margin-top: calc(81px + (244 - 81) * ((115vw - 320px) / (1800 - 320)));
+        margin-left: calc(244px + (732 - 244) * ((115vw - 320px) / (1800 - 320)));
+    }
+}
+ */
