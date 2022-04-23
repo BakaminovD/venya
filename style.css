@@ -2,11 +2,15 @@ html{
     scroll-behavior: smooth;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    overflow-x: hidden;
+    position: relative;
 }
 
 
@@ -18,13 +22,13 @@ body {
 
 p {
     text-align: center;
-    margin: calc(4px + (15 - 4) * ((110vw - 320px) / (1800 - 320)));
+    margin: calc(3px + (15 - 3) * ((110vw - 320px) / (1800 - 320)));
 }
 
 .name {
     float: left;
     width: 30%;
-    height: calc(16px + (65 - 16) * ((110vw - 320px) / (1800 - 320)));
+    height: calc(11px + (65 - 11) * ((110vw - 320px) / (1800 - 320)));
     padding: 0;
     text-align: center;
     border-bottom: 2px ridge black;
@@ -52,11 +56,11 @@ p {
 button {
     background-color: black;
     color: white;
-    padding: 0 calc(6px + (25 - 6) * ((110vw - 320px) / (1800 - 320)));
-    height: calc(8px + (30 - 8) * ((110vw - 320px) / (1800 - 320)));
-    border-radius: calc(4px + (15 - 4) * ((110vw - 320px) / (1800 - 320))); 
+    padding: 0 calc(4px + (25 - 4) * ((110vw - 320px) / (1800 - 320)));
+    height: calc(5px + (30 - 5) * ((110vw - 320px) / (1800 - 320)));
+    border-radius: calc(3px + (15 - 3) * ((110vw - 320px) / (1800 - 320))); 
     border: none;
-    margin-right: calc(3px + (10 - 3) * ((110vw - 320px) / (1800 - 320))); 
+    margin-right: calc(2px + (10 - 2) * ((110vw - 320px) / (1800 - 320))); 
 }
 
 button:hover  {
@@ -65,59 +69,59 @@ button:hover  {
 
 .content {
     /*max-width: 1800px;*/
-    margin-top: calc(5px + (20 - 5) * ((110vw - 320px) / (1800 - 320)));
+    margin-top: calc(3px + (20 - 3) * ((110vw - 320px) / (1800 - 320)));
     display: table;
-    border-spacing: calc(5px + (20 - 5) * ((110vw - 320px) / (1800 - 320))) 0;
-    margin-left: calc((-5px) + (-20 + 5) * ((110vw - 320px) / (1800 - 320)));
-    margin-right: calc((-5px) + (-20 + 5) * ((110vw - 320px) / (1800 - 320)));
+    border-spacing: calc(3px + (20 - 3) * ((110vw - 320px) / (1800 - 320))) 0;
+    margin-left: calc((-3px) + (-20 + 3) * ((110vw - 320px) / (1800 - 320)));
+    margin-right: calc((-3px) + (-20 + 3) * ((110vw - 320px) / (1800 - 320)));
 }
 
 .banner {
     display: table-cell;
     width: 60%;
-    height: calc(163px + (650 - 163) * ((110vw - 320px) / (1800 - 320)));
-    margin-right: calc(3px + (10 - 3) * ((110vw - 320px) / (1800 - 320)));
+    height: calc(108px + (650 - 108) * ((110vw - 320px) / (1800 - 320)));
+    margin-right: calc(2px + (10 - 2) * ((110vw - 320px) / (1800 - 320)));
     background-color: violet;
     color: black;
-    border-radius: 0 calc(63px + (250 - 63) * ((110vw - 320px) / (1800 - 320))) 0 0;
+    border-radius: 0 calc(42px + (250 - 42) * ((110vw - 320px) / (1800 - 320))) 0 0;
 }
 
 .max_banner {
-    margin-top: calc(25px + (100 - 25) * ((110vw - 320px) / (1800 - 320)));
-    margin-left: calc(8px + (30 - 8) * ((110vw - 320px) / (1800 - 320)));
+    margin-top: calc(17px + (100 - 17) * ((110vw - 320px) / (1800 - 320)));
+    margin-left: calc(5px + (30 - 5) * ((110vw - 320px) / (1800 - 320)));
     font-weight: bold;
-    font-size: calc(15px + (60 - 15) * ((110vw - 320px) / (1800 - 320)));
+    font-size: calc(10px + (60 - 10) * ((110vw - 320px) / (1800 - 320)));
     color: white;
 }
 
 .min_banner {
     margin-top: 25%;
-    margin-left: calc(8px + (30 - 8) * ((110vw - 320px) / (1800 - 320)));
-    font-size: 20px calc(5px + (20 - 5) * ((110vw - 320px) / (1800 - 320)));
+    margin-left: calc(5px + (30 - 5) * ((110vw - 320px) / (1800 - 320)));
+    font-size: calc(3px + (20 - 3) * ((110vw - 320px) / (1800 - 320)));
     color: white;
 }
 
 .photo {
     display: table-cell;
-    width: calc(175px + (700 - 175) * ((110vw - 320px) / (1800 - 320)));
-    height: calc(163px + (650 - 163) * ((110vw - 320px) / (1800 - 320)));
-    background: url(photo/bottom1.jpg);                                               /* !!!!!!    175*163   !!!!  */
-    background-position: calc(110px + (700 - 110) * ((110vw - 320px) / (1800 - 320))) calc(98px + (650 - 98) * ((110vw - 320px) / (1800 - 320))); /*100% 100%*/
-    background-repeat: inherit;
-    /*background-size: contain;*/
-    border-radius: 0 0 calc(63px + (250 - 63) * ((110vw - 320px) / (1800 - 320))) 0;
+    width: calc(117px + (700 - 117) * ((110vw - 320px) / (1800 - 320)));
+    height: calc(125px + (650 - 125) * ((110vw - 320px) / (1800 - 320)));
+    background-image: url(photo/top.jpg);                                               /* !!!!!!    175*163   !!!!  */
+    /*background-position: (calc(117px + (700 - 117) * ((110vw - 320px) / (1800 - 320)))) (calc(125px + (650 - 125) * ((110vw - 320px) / (1800 - 320)))); 100% 100%*/
+    /*background-repeat: inherit;*/
+    background-size: cover; /*background-size: contain;*/
+    border-radius: 0 0 calc(42px + (250 - 42) * ((110vw - 320px) / (1800 - 320))) 0;
 }
 
 .bottom {
     max-width: 100%;
-    height: calc(16px + (65 - 16) * ((110vw - 320px) / (1800 - 320)));
+    height: calc(11px + (65 - 11) * ((110vw - 320px) / (1800 - 320)));
     border-bottom: 2px ridge black;
     border-top: 2px ridge black;
-    margin-top: calc(3px + (10 - 3) * ((110vw - 320px) / (1800 - 320)));
+    margin-top: calc(2px + (10 - 2) * ((110vw - 320px) / (1800 - 320)));
 }
 
 .niz {
-    font-size: calc(9px + (35 - 9) * ((110vw - 320px) / (1800 - 320)));
+    font-size: calc(6px + (35 - 6) * ((110vw - 320px) / (1800 - 320)));
     font-weight: bold;
     margin-top: 0;
     text-align: center;
@@ -128,21 +132,21 @@ button:hover  {
 .black_list {
     display: inline-block;
     width: 100%;
-    height: calc(299px + (1195 - 299) * ((110vw - 320px) / (1800 - 320)));
-    border-radius: 0 0 calc(63px + (250 - 63) * ((110vw - 320px) / (1800 - 320))) 0;
-    margin-top: calc(3px + (10 - 3) * ((110vw - 320px) / (1800 - 320)));
+    height: calc(199px + (1195 - 199) * ((110vw - 320px) / (1800 - 320)));
+    border-radius: 0 0 calc(42px + (250 - 42) * ((110vw - 320px) / (1800 - 320))) 0;
+    margin-top: calc(2px + (10 - 2) * ((110vw - 320px) / (1800 - 320)));
     background-color: black;
 }
 
 ul {
-    margin-left: calc(8px + (30 - 8) * ((110vw - 320px) / (1800 - 320)));
+    margin-left: calc(5px + (30 - 5) * ((110vw - 320px) / (1800 - 320)));
 }
 
 li {
     color: violet;
     list-style-type: disc;
-    padding-top: calc(8px + (30 - 8) * ((110vw - 320px) / (1800 - 320)));
-    font-size: calc(6px + (25 - 6) * ((110vw - 320px) / (1800 - 320)));
+    padding-top: calc(5px + (30 - 5) * ((110vw - 320px) / (1800 - 320)));
+    font-size: calc(4px + (25 - 4) * ((110vw - 320px) / (1800 - 320)));
     font-weight: bold;
 }
 
@@ -152,10 +156,10 @@ span {
 
 .my_text{
     color: white;
-    margin-left: calc(175px + (700 - 175) * ((110vw - 320px) / (1800 - 320)));
-    margin-top: calc(13px + (50 - 13) * ((110vw - 320px) / (1800 - 320)));
-    text-indent: calc(6px + (25 - 6) * ((110vw - 320px) / (1800 - 320)));
-    font-size: calc(5px + (18 - 5) * ((110vw - 320px) / (1800 - 320)));
+    margin-left: calc(117px + (700 - 117) * ((110vw - 320px) / (1800 - 320)));
+    margin-top: calc(8px + (50 - 8) * ((110vw - 320px) / (1800 - 320)));
+    text-indent: calc(4px + (25 - 4) * ((110vw - 320px) / (1800 - 320)));
+    font-size: calc(3px + (18 - 3) * ((110vw - 320px) / (1800 - 320)));
 }
 
 /*БЛОК С ДАТАМИ И СОБЫТИЯМИ*/
@@ -163,9 +167,9 @@ span {
 .blok_1{
     position: absolute;
     color: white;
-    margin-top: calc(25px + (100 - 25) * ((110vw - 320px) / (1800 - 320)));
-    width: calc(450px + (1800 - 450) * ((110vw - 320px) / (1800 - 320)));
-    margin-left: calc(75px + (300 - 75) * ((110vw - 320px) / (1800 - 320)));
+    margin-top: calc(17px + (100 - 17) * ((110vw - 320px) / (1800 - 320)));
+    width: calc(300px + (1800 - 300) * ((110vw - 320px) / (1800 - 320)));
+    margin-left: calc(50px + (300 - 50) * ((110vw - 320px) / (1800 - 320)));
 }
 
 .my_a:link {
@@ -189,17 +193,17 @@ span {
 
 .label_1 {
     position: absolute;
-    margin-left: calc(25px + (100 - 25) * ((110vw - 320px) / (1800 - 320)));
+    margin-left: calc(17px + (100 - 17) * ((110vw - 320px) / (1800 - 320)));
     transition-duration: 1s;
 }
 
 .label_1:hover {
-    text-shadow: 0px 0px calc(5px + (20 - 5) * ((110vw - 320px) / (1800 - 320))) white;
+    text-shadow: 0px 0px calc(3px + (20 - 3) * ((110vw - 320px) / (1800 - 320))) white;
 }
 
 .label_2 {
     position: absolute;
-    margin-left: calc(125px + (500 - 125) * ((110vw - 320px) / (1800 - 320)));
+    margin-left: calc(83px + (500 - 83) * ((110vw - 320px) / (1800 - 320)));
     opacity: .3;
     transition-duration: 1s;
 }
@@ -210,7 +214,7 @@ span {
 
 .label_3 {
     position: absolute;
-    margin-left: calc(225px + (900 - 225) * ((110vw - 320px) / (1800 - 320)));
+    margin-left: calc(150px + (900 - 150) * ((110vw - 320px) / (1800 - 320)));
     opacity: .3;
     transition-duration: 1s;
 }
@@ -220,18 +224,19 @@ span {
 }
 
 .line {
-    width: calc(100px + (400 - 100) * ((110vw - 320px) / (1800 - 320)));
+    width: calc(67px + (400 - 67) * ((110vw - 320px) / (1800 - 320)));
     height: 2px;
     background-color: white;
 }
 
 .ear {
-    font-size: calc(25px + (100 - 25) * ((110vw - 320px) / (1800 - 320)));
+    font-size: calc(17px + (100 - 17) * ((110vw - 320px) / (1800 - 320)));
 }
 
 .event
 {
-    margin-top: calc(3px + (10 - 3) * ((110vw - 320px) / (1800 - 320)));
+    margin-top: calc(2px + (10 - 2) * ((110vw - 320px) / (1800 - 320)));
+    font-size: calc(3px + (15 - 3) * ((110vw - 320px) / (1800 - 320)));
 }
 
 /* КОНЕЦ БЛОКА С ДАТАМИ И СОБЫТИЯМИ */
@@ -240,33 +245,30 @@ span {
     position: relative;
     width: 0; /*700*/
     height: 0;
-    margin-top: calc(58px + (270 - 58) * ((110vw - 320px) / (1800 - 320))); /*70*/
-    padding-left: calc(28px + (110 - 28) * ((110vw - 320px) / (1800 - 320)));
+    margin-top: calc(45px + (270 - 45) * ((110vw - 320px) / (1800 - 320))); /*70*/
+    padding-left: calc(18px + (110 - 18) * ((110vw - 320px) / (1800 - 320)));
+}
+
+.one, .two, .three, .four, .five, .six {
+    position: absolute;
+    width: calc(57px + (340 - 57) * ((110vw - 320px) / (1800 - 320)));
+    height: calc(13px + (80 - 13) * ((110vw - 320px) / (1800 - 320)));
+    border-radius: calc(13px + (80 - 13) * ((110vw - 320px) / (1800 - 320)));
+    text-align: center;
+    font-size: calc(7px + (40 - 7) * ((110vw - 320px) / (1800 - 320)));
 }
 
 .one {
-    position: absolute;
-    width: calc(85px + (340 - 85) * ((110vw - 320px) / (1800 - 320)));
-    height: calc(20px + (80 - 20) * ((110vw - 320px) / (1800 - 320)));
-    border-radius: calc(20px + (80 - 20) * ((110vw - 320px) / (1800 - 320)));
     background-color: yellow;
-    text-align: center;
-    font-size: calc(10px + (40 - 10) * ((110vw - 320px) / (1800 - 320)));
     margin-top: calc(48px + (430 - 48) * ((110vw - 320px) / (1800 - 320))); /*-30px*/
-    margin-left: calc(8px + (30 - 8) * ((110vw - 320px) / (1800 - 320)));
+    margin-left: calc(5px + (30 - 5) * ((110vw - 320px) / (1800 - 320)));
 }
 
 .two {
-    position: absolute;
-    width: calc(85px + (340 - 85) * ((110vw - 320px) / (1800 - 320)));
-    height: calc(20px + (80 - 20) * ((110vw - 320px) / (1800 - 320)));
-    border-radius: calc(20px + (80 - 20) * ((110vw - 320px) / (1800 - 320)));
     background-color: blue;
     color: white;
-    text-align: center;
-    font-size: calc(10px + (40 - 10) * ((110vw - 320px) / (1800 - 320)));
     margin-top: calc(35px + (380 - 35) * ((110vw - 320px) / (1800 - 320)));
-    margin-left: calc(68px + (270 - 68) * ((110vw - 320px) / (1800 - 320)));
+    margin-left: calc(45px + (270 - 45) * ((110vw - 320px) / (1800 - 320)));
     -moz-transform: rotate(20deg);
     -webkit-transform: rotate(20deg);
     -o-transform: rotate(20deg);
@@ -275,17 +277,11 @@ span {
 }
 
 .three {
-    position: absolute;
-    width: calc(85px + (340 - 85) * ((110vw - 320px) / (1800 - 320)));
-    height: calc(20px + (80 - 20) * ((110vw - 320px) / (1800 - 320)));
-    border-radius: calc(20px + (80 - 20) * ((110vw - 320px) / (1800 - 320)));
     background-color: black;
     border: 2px ridge white;
     color: white;
-    text-align: center;
-    font-size: calc(10px + (40 - 10) * ((110vw - 320px) / (1800 - 320)));
     margin-top: calc(35px + (380 - 35) * ((110vw - 320px) / (1800 - 320)));
-    margin-left: calc(138px + (550 - 138) * ((110vw - 320px) / (1800 - 320)));
+    margin-left: calc(92px + (550 - 92) * ((110vw - 320px) / (1800 - 320)));
     -moz-transform: rotate(16deg);
     -webkit-transform: rotate(16deg);
     -o-transform: rotate(16deg);
@@ -294,16 +290,10 @@ span {
 }
 
 .four {
-    position: absolute;
-    width: calc(85px + (340 - 85) * ((110vw - 320px) / (1800 - 320)));
-    height: calc(20px + (80 - 20) * ((110vw - 320px) / (1800 - 320)));
-    border-radius: calc(20px + (80 - 20) * ((110vw - 320px) / (1800 - 320)));
     background-color: violet;
     color: white;
-    text-align: center;
-    font-size: calc(10px + (40 - 10) * ((110vw - 320px) / (1800 - 320)));
     margin-top: calc(7px + (268 - 7) * ((110vw - 320px) / (1800 - 320)));
-    margin-left: calc(102px + (408 - 102) * ((110vw - 320px) / (1800 - 320)));
+    margin-left: calc(68px + (408 - 68) * ((110vw - 320px) / (1800 - 320)));
     -moz-transform: rotate(-12deg);
     -webkit-transform: rotate(-12deg);
     -o-transform: rotate(-12deg);
@@ -312,16 +302,10 @@ span {
 }
 
 .five {
-    position: absolute;
-    width: calc(85px + (340 - 85) * ((110vw - 320px) / (1800 - 320)));
-    height: calc(20px + (80 - 20) * ((110vw - 320px) / (1800 - 320)));
-    border-radius: calc(20px + (80 - 20) * ((110vw - 320px) / (1800 - 320)));
     background-color: blue;
     color: white;
-    text-align: center;
-    font-size: calc(10px + (40 - 10) * ((110vw - 320px) / (1800 - 320)));
     margin-top: calc(34px + (376 - 34) * ((110vw - 320px) / (1800 - 320)));
-    margin-left: calc(200px + (800 - 200) * ((110vw - 320px) / (1800 - 320)));
+    margin-left: calc(133px + (800 - 133) * ((110vw - 320px) / (1800 - 320)));
     -moz-transform: rotate(20deg);
     -webkit-transform: rotate(20deg);
     -o-transform: rotate(20deg);
@@ -330,17 +314,11 @@ span {
 }
 
 .six {
-    position: absolute;
-    width: calc(85px + (340 - 85) * ((110vw - 320px) / (1800 - 320)));
-    height: calc(20px + (80 - 20) * ((110vw - 320px) / (1800 - 320)));
-    border-radius: calc(20px + (80 - 20) * ((110vw - 320px) / (1800 - 320)));
     background-color: black;
     border: 2px ridge white;
     color: white;
-    text-align: center;
-    font-size: calc(10px + (40 - 10) * ((110vw - 320px) / (1800 - 320)));
     margin-top: calc(1px + (244 - 1) * ((110vw - 320px) / (1800 - 320)));
-    margin-left: calc(185px + (740 - 185) * ((110vw - 320px) / (1800 - 320)));
+    margin-left: calc(123px + (740 - 123) * ((110vw - 320px) / (1800 - 320)));
     -moz-transform: rotate(-5deg);
     -webkit-transform: rotate(-5deg);
     -o-transform: rotate(-5deg);
@@ -352,43 +330,43 @@ span {
 
 .box {
     /*display: inline-block;*/
-    height: calc(225px + (900 - 225) * ((110vw - 320px) / (1800 - 320)));
+    height: calc(150px + (900 - 150) * ((110vw - 320px) / (1800 - 320)));
     border-bottom: 2px ridge black;
 }
 
 .text_about {
     position: absolute;
-    margin-left: calc(25px + (200 - 25) * ((110vw - 320px) / (1800 - 320)));
-    margin-top: calc(18px + (70 - 18) * ((110vw - 320px) / (1800 - 320)));
-    width: calc(300px + (1200 - 300) * ((110vw - 320px) / (1800 - 320)));
-    font-size: calc(10px + (40 - 10) * ((110vw - 320px) / (1800 - 320)));
+    margin-left: calc(25px + (200 - 25) * ((110vw - 320px) / (1800 - 320))); /* not calc*/
+    margin-top: calc(12px + (70 - 12) * ((110vw - 320px) / (1800 - 320)));
+    width: calc(200px + (1200 - 200) * ((110vw - 320px) / (1800 - 320)));
+    font-size: calc(7px + (40 - 7) * ((110vw - 320px) / (1800 - 320)));
     z-index: 3;
 }
 
 .he {
     position: absolute;
-    margin-left: calc(238px + (950 - 238) * ((110vw - 320px) / (1800 - 320)));
-    margin-top: calc(58px + (230 - 58) * ((110vw - 320px) / (1800 - 320)));
+    margin-left: calc(158px + (950 - 158) * ((110vw - 320px) / (1800 - 320)));
+    margin-top: calc(38px + (230 - 38) * ((110vw - 320px) / (1800 - 320)));
     z-index: 2;
 }
 
 .him {
-    width: calc(160px + (639 - 160) * ((110vw - 320px) / (1800 - 320)));
-    height: calc(167px + (669 - 167) * ((110vw - 320px) / (1800 - 320)));
+    width: calc(107px + (639 - 107) * ((110vw - 320px) / (1800 - 320)));
+    height: calc(112px + (669 - 112) * ((110vw - 320px) / (1800 - 320)));
 }
 
 .poet {
     position: absolute;
-    margin-left: calc(25px + (100 - 25) * ((110vw - 320px) / (1800 - 320)));
-    margin-top: calc(210px + (840 - 210) * ((110vw - 320px) / (1800 - 320)));
+    margin-left: calc(17px + (100 - 17) * ((110vw - 320px) / (1800 - 320)));
+    margin-top: calc(140px + (840 - 140) * ((110vw - 320px) / (1800 - 320)));
     font-weight: bold;
-    font-size: calc(5px + (20 - 5) * ((110vw - 320px) / (1800 - 320)));
+    font-size: calc(3px + (20 - 3) * ((110vw - 320px) / (1800 - 320)));
 }
 
 .rot {
     position: absolute;
-    margin-left: calc(100px + (400 - 100) * ((110vw - 320px) / (1800 - 320)));
-    margin-top: calc(28px + (110 - 28) * ((110vw - 320px) / (1800 - 320)));
+    margin-left: calc(67px + (400 - 67) * ((110vw - 320px) / (1800 - 320)));
+    margin-top: calc(18px + (110 - 18) * ((110vw - 320px) / (1800 - 320)));
     -moz-transform: skew(-30deg, 0deg);
     -webkit-transform: skew(-30deg, 0deg);
     -o-transform: skew(-30deg, 0deg);
@@ -398,9 +376,9 @@ span {
 }
 
 .figur {
-    height: calc(75px + (300 - 75) * ((110vw - 320px) / (1800 - 320))); 
-    width: calc(175px + (700 - 175) * ((110vw - 320px) / (1800 - 320))); 
-    margin: calc(25px + (100 - 25) * ((110vw - 320px) / (1800 - 320))) auto;
+    height: calc(50px + (300 - 50) * ((110vw - 320px) / (1800 - 320))); 
+    width: calc(117px + (700 - 117) * ((110vw - 320px) / (1800 - 320))); 
+    margin: calc(17px + (100 - 17) * ((110vw - 320px) / (1800 - 320))) auto;
     position: relative;
     transform: rotate(180deg);
 }
@@ -436,22 +414,22 @@ span {
 /* с фигурой */
 
 .max_banner_down {
-    margin-top: calc(13px + (50 - 13) * ((110vw - 320px) / (1800 - 320)));
-    margin-left: calc(8px + (30 - 8) * ((110vw - 320px) / (1800 - 320)));
+    margin-top: calc(8px + (50 - 8) * ((110vw - 320px) / (1800 - 320)));
+    margin-left: calc(5px + (30 - 5) * ((110vw - 320px) / (1800 - 320)));
     font-weight: bold;
-    font-size: calc(10px + (40 - 10) * ((110vw - 320px) / (1800 - 320)));
+    font-size: calc(7px + (40 - 7) * ((110vw - 320px) / (1800 - 320)));
     color: white;
 }
 
 .btn_go {
-    margin-top: calc(5px + (20 - 5) * ((110vw - 320px) / (1800 - 320)));
-    margin-left: calc(8px + (30 - 8) * ((110vw - 320px) / (1800 - 320)));
+    margin-top: calc(3px + (20 - 3) * ((110vw - 320px) / (1800 - 320)));
+    margin-left: calc(5px + (30 - 5) * ((110vw - 320px) / (1800 - 320)));
     float: left;
-    font-size: calc(5px + (20 - 5) * ((110vw - 320px) / (1800 - 320)));
+    font-size: calc(3px + (20 - 3) * ((110vw - 320px) / (1800 - 320)));
     background-color: white;
     color: black;
-    height: calc(9px + (35 - 9) * ((110vw - 320px) / (1800 - 320)));
-    border-radius: calc(9px + (35 - 9) * ((110vw - 320px) / (1800 - 320)));
+    height: calc(6px + (35 - 6) * ((110vw - 320px) / (1800 - 320)));
+    border-radius: calc(6px + (35 - 6) * ((110vw - 320px) / (1800 - 320)));
     text-align: center;
     transition-duration: 1s;
 }
@@ -462,21 +440,21 @@ span {
 }
 
 .youtube {
-    width: calc(25px + (100 - 25) * ((110vw - 320px) / (1800 - 320)));
+    width: calc(17px + (100 - 17) * ((110vw - 320px) / (1800 - 320)));
 }
 
 .whatsapp {
-    width: calc(30px + (120 - 30) * ((110vw - 320px) / (1800 - 320)));
+    width: calc(20px + (120 - 20) * ((110vw - 320px) / (1800 - 320)));
 }
 
 .telegram {
-    width: calc(25px + (100 - 25) * ((110vw - 320px) / (1800 - 320)));
+    width: calc(17px + (100 - 17) * ((110vw - 320px) / (1800 - 320)));
 }
 
 .min_banner_down {
     margin-top: 35%;
-    margin-left: calc(8px + (30 - 8) * ((110vw - 320px) / (1800 - 320)));
-    font-size: calc(8px + (30 - 8) * ((110vw - 320px) / (1800 - 320)));
+    margin-left: calc(5px + (30 - 5) * ((110vw - 320px) / (1800 - 320)));
+    font-size: calc(5px + (30 - 5) * ((110vw - 320px) / (1800 - 320)));
     color: white;
 }
 
@@ -487,30 +465,31 @@ span {
 .foto_list {
     display: inline-block;
     background-color: white;
-    margin-left: calc(18px + (70 - 18) * ((110vw - 320px) / (1800 - 320)));
+    margin-left: calc(12px + (70 - 12) * ((110vw - 320px) / (1800 - 320)));
 }
 
 .portfolio {
-    width: calc(75px + (300 - 75) * ((110vw - 320px) / (1800 - 320)));
-    margin: calc(3px + (10 - 3) * ((110vw - 320px) / (1800 - 320)));
-    border-radius: calc(8px + (30 - 8) * ((110vw - 320px) / (1800 - 320)));
+    width: calc(50px + (300 - 50) * ((110vw - 320px) / (1800 - 320)));
+    margin: calc(2px + (10 - 2) * ((110vw - 320px) / (1800 - 320)));
+    border-radius: calc(5px + (30 - 5) * ((110vw - 320px) / (1800 - 320)));
 }
 
 .foto_top {
     float: left;
-    border-radius: calc(5px + (20 - 5) * ((110vw - 320px) / (1800 - 320)));
-    margin: calc(3px + (10 - 3) * ((110vw - 320px) / (1800 - 320)));
+    border-radius: calc(3px + (20 - 3) * ((110vw - 320px) / (1800 - 320)));
+    margin: calc(2px + (10 - 2) * ((110vw - 320px) / (1800 - 320)));
 }
 
 .foto_bottom {
     float: left;
-    border-radius: calc(5px + (20 - 5) * ((110vw - 320px) / (1800 - 320)));
-    margin: calc(3px + (10 - 3) * ((110vw - 320px) / (1800 - 320)));
+    border-radius: calc(3px + (20 - 3) * ((110vw - 320px) / (1800 - 320)));
+    margin: calc(2px + (10 - 2) * ((110vw - 320px) / (1800 - 320)));
 }
 
 .his_name {
     margin-left: 0;
     margin-top: 0;
+    font-size: calc(3px + (15 - 3) * ((110vw - 320px) / (1800 - 320)))
 }
 
 /* АККОРДЕОН */
@@ -520,8 +499,8 @@ span {
 }
 
 .faq {
-    width: calc(350px + (1400 - 350) * ((110vw - 320px) / (1800 - 320)));
-    margin: calc(5px + (20 - 5) * ((110vw - 320px) / (1800 - 320))) auto;
+    width: calc(233px + (1400 - 233) * ((110vw - 320px) / (1800 - 320)));
+    margin: calc(3px + (20 - 3) * ((110vw - 320px) / (1800 - 320))) auto;
 }
 
 .questoin {
@@ -530,7 +509,7 @@ span {
 
 .faq_item {
     border-top: 2px solid black;
-    font-size: calc(8px + (30 - 8) * ((110vw - 320px) / (1800 - 320)));
+    font-size: calc(5px + (30 - 5) * ((110vw - 320px) / (1800 - 320)));
 }
 
 .faq_input {
@@ -557,45 +536,46 @@ span {
     position: relative;
     display: block;
     cursor: pointer;
-    padding: calc(3px + (10 - 3) * ((110vw - 320px) / (1800 - 320))) calc(3px + (10 - 3) * ((110vw - 320px) / (1800 - 320)));
+    padding: calc(2px + (10 - 2) * ((110vw - 320px) / (1800 - 320))) calc(2px + (10 - 2) * ((110vw - 320px) / (1800 - 320)));
 }
 
 .faq_titel::after {
     content: '\2192';
     display: block;
     position: absolute;
-    right: calc(4px + (15 - 4) * ((110vw - 320px) / (1800 - 320)));
+    right: calc(3px + (15 - 3) * ((110vw - 320px) / (1800 - 320)));
     transform: translateY(-100%);
 }
 
 .faq_text {
     display: none;
-    padding: calc(3px + (10 - 3) * ((110vw - 320px) / (1800 - 320))) calc(3px + (10 - 3) * ((110vw - 320px) / (1800 - 320)));
-    font-size: calc(5px + (20 - 5) * ((110vw - 320px) / (1800 - 320)));
+    padding: calc(2px + (10 - 2) * ((110vw - 320px) / (1800 - 320))) calc(3px + (10 - 3) * ((110vw - 320px) / (1800 - 320)));
+    font-size: calc(3px + (20 - 3) * ((110vw - 320px) / (1800 - 320)));
 }
 
 
 /* КОНЕЦ АККОРДЕОНА */
 
 .btn_question {
-    width: calc(325px + (1300 - 325) * ((110vw - 320px) / (1800 - 320)));
-    height: calc(13px + (50 - 13) * ((110vw - 320px) / (1800 - 320)));
-    border-radius: calc(13px + (50 - 13) * ((110vw - 320px) / (1800 - 320)));
+    width: calc(217px + (1300 - 217) * ((110vw - 320px) / (1800 - 320)));
+    height: calc(8px + (50 - 8) * ((110vw - 320px) / (1800 - 320)));
+    border-radius: calc(8px + (50 - 8) * ((110vw - 320px) / (1800 - 320)));
     background-color: violet;
     color: white;
     text-align: center;
-    font-size: calc(8px + (30 - 8) * ((110vw - 320px) / (1800 - 320)));
-    margin: calc(33px + (10 - 33) * ((110vw - 320px) / (1800 - 320))) auto;
+    font-size: calc(5px + (30 - 5) * ((110vw - 320px) / (1800 - 320)));
+    margin: calc(2px + (10 - 2) * ((110vw - 320px) / (1800 - 320))) auto;
 }
 
 .photo-1 {
     display: table-cell;
-    width: calc(175px + (700 - 175) * ((110vw - 320px) / (1800 - 320)));
-    height: calc(163px + (650 - 163) * ((110vw - 320px) / (1800 - 320)));
-    background: url(photo/top1.jpg);
-    background-position: calc(175px + (700 - 175) * ((110vw - 320px) / (1800 - 320))) calc(163px + (650 - 163) * ((110vw - 320px) / (1800 - 320))); /*100% 100%*/
-    background-repeat: inherit;
-    border-radius: 0 0 calc(63px + (250 - 63) * ((110vw - 320px) / (1800 - 320))) 0;
+    width: calc(117px + (700 - 117) * ((110vw - 320px) / (1800 - 320)));
+    height: calc(108px + (650 - 108) * ((110vw - 320px) / (1800 - 320)));
+    background-image: url(photo/bottom.jpg);                                               /* !!!!!!    175*163   !!!!  */
+    /*background-position: (calc(117px + (700 - 117) * ((110vw - 320px) / (1800 - 320)))) (calc(125px + (650 - 125) * ((110vw - 320px) / (1800 - 320)))); 100% 100%*/
+    /*background-repeat: inherit;*/
+    background-size: cover; /*background-size: contain;*/
+    border-radius: 0 0 calc(42px + (250 - 42) * ((110vw - 320px) / (1800 - 320))) 0;
 }
 
 /* СКРОЛЛ */
@@ -610,16 +590,16 @@ span {
   
   /* для Chrome/Edge/Safari */
   *::-webkit-scrollbar {
-    height: 12px; /* 12px */
-    width: 12px;
+    height: calc(2px + (12 - 2) * ((110vw - 320px) / (1800 - 320))); /* 12px */
+    width: calc(2px + (12 - 2) * ((110vw - 320px) / (1800 - 320)));
   }
   *::-webkit-scrollbar-track {
     background: white;
   }
   *::-webkit-scrollbar-thumb {
     background-color: violet;
-    border-radius: 10px;
-    border: 3px solid white;
+    border-radius: calc(2px + (10 - 2) * ((110vw - 320px) / (1800 - 320)));
+    border: calc(1px + (3 - 1) * ((110vw - 320px) / (1800 - 320))) solid white;
   }
 
 /* КОНЕЦ СКРОЛЛА*/
