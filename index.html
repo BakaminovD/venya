@@ -9,19 +9,33 @@
 </head>
 <body>
 
+    <div class="upward" onclick="scrollTopTop()">
+        <p class="upward-p">⇑</p>
+    </div>
+
     <div class="contaner">
         <div class="name">
             <p>МОСКВА - ПЕТУШКИ</p>
 
         </div>
+
         <div class="btn">
+            <p>
+                <a href="#we" class="my_a"><div class="btn1">он</div></a>
+                <a href="#accord" class="my_a"><div class="btn2">вопросы</div></a>
+                <a href="#people" class="my_a"><div class="btn3">фотографии</div></a>
+                <a href="#contacts" class="my_a"><div class="btn4">выпить!</div></a>
+            </p>
+        </div>
+
+       <!-- <div class="btn">
             <p class="btn2">
                 <a href="#we"><button class="btn1">он</button></a>
                 <a href="#accord"><button class="btn1">вопросы</button></a>
                 <a href="#people"><button class="btn1">фотографии</button></a>
                 <a href="#contacts"><button class="btn1">выпить!</button></a>
             </p>
-        </div>
+        </div> -->
     </div>
     <div class="content">
         <div class="banner">
@@ -284,13 +298,34 @@
         </div>
         <div class="btn">
             <p>
+                <a href="#we" class="my_a"><div class="btn1">он</div></a>
+                <a href="#accord" class="my_a"><div class="btn2">вопросы</div></a>
+                <a href="#people" class="my_a"><div class="btn3">фотографии</div></a>
+                <a href="#contacts" class="my_a"><div class="btn4">выпить!</div></a>
+            </p>
+        </div>
+       <!-- <div class="btn">
+            <p>
                 <a href="#we"><button class="btn1">он</button></a>
                 <a href="#accord"><button class="btn1">вопросы</button></a>
                 <a href="#people"><button class="btn1">фотографии</button></a>
                 <a href="#contacts"><button class="btn1">выпить!</button></a>
             </p>
-        </div>
+        </div> -->
     </div>
+
+    <script>
+        window.addEventListener('scroll', function(){
+            let scroll = document.querySelector('.upward');
+            scroll.classList.toggle("active", window.scrollY>500)
+        })
+        function scrollTopTop(){
+            window.scrollTo({
+                top:0,
+                behavior: 'smooth',
+            })
+        }
+    </script>
    
 </body>
 </html>
