@@ -33,7 +33,7 @@ body {
 }
 
 .upward {
-    color: violet;
+    color: #BA55D3;
     background-color: black;
     position: fixed;
     bottom: 700px;
@@ -129,7 +129,7 @@ p {
 }
 
 .btn1:hover, .btn2:hover, .btn3:hover, .btn4:hover {
-    background-color: violet;
+    background-color: #BA55D3;
     color: black;
 } 
 
@@ -146,7 +146,7 @@ p {
     width: 60%;
     height: calc(108px + (650 - 108) * ((110vw - 320px) / (1800 - 320)));
     margin-right: calc(2px + (10 - 2) * ((110vw - 320px) / (1800 - 320)));
-    background-color: violet;
+    background-color: #BA55D3;
     color: black;
     border-radius: 0 calc(42px + (250 - 42) * ((110vw - 320px) / (1800 - 320))) 0 0;
 }
@@ -208,7 +208,7 @@ ul {
 }
 
 li {
-    color: violet;
+    color: #BA55D3;
     list-style-type: disc;
     padding-top: calc(5px + (30 - 5) * ((110vw - 320px) / (1800 - 320)));
     font-size: calc(4px + (25 - 4) * ((110vw - 320px) / (1800 - 320)));
@@ -336,7 +336,7 @@ span {
 }
 
 .four {
-    background-color: violet;
+    background-color: #BA55D3;
     color: white;
     margin-top: calc(37px + (268 - 37) * ((110vw - 320px) / (1800 - 320)));
     margin-left: calc(68px + (408 - 68) * ((110vw - 320px) / (1800 - 320)));
@@ -436,8 +436,8 @@ span {
     width: 50%;
     position: absolute; 
     top: 0;
-    background: violet; 
-    border: 1px ridge violet;   
+    background: #BA55D3 
+    border: 1px ridge #BA55D3;   
 }
     
 .figur:before {
@@ -482,7 +482,7 @@ span {
 
 .btn_go:hover {
     background-color: black;
-    color: violet;
+    color: #BA55D3;
 }
 
 .youtube {
@@ -574,7 +574,7 @@ span {
 }
 
 .faq_input:checked ~ .faq_titel {
-    color: violet;
+    color: #BA55D3;
 }
 
 .faq_input:checked ~ .faq_titel::after {
@@ -609,7 +609,7 @@ span {
     width: calc(217px + (1300 - 217) * ((110vw - 320px) / (1800 - 320)));
     height: calc(8px + (50 - 8) * ((110vw - 320px) / (1800 - 320)));
     border-radius: calc(8px + (50 - 8) * ((110vw - 320px) / (1800 - 320)));
-    background-color: violet;
+    background-color: #BA55D3;
     color: white;
     text-align: center;
     font-size: calc(5px + (30 - 5) * ((110vw - 320px) / (1800 - 320)));
@@ -634,7 +634,7 @@ span {
    сейчас только для Firefox */
    * {
     scrollbar-width: thin;
-    scrollbar-color: violet white;
+    scrollbar-color: #BA55D3 white;
   }
   
   /* для Chrome/Edge/Safari */
@@ -646,7 +646,7 @@ span {
     background: white;
   }
   *::-webkit-scrollbar-thumb {
-    background-color: violet;
+    background-color: #BA55D3;
     border-radius: calc(2px + (10 - 2) * ((110vw - 320px) / (1800 - 320)));
     border: calc(1px + (3 - 1) * ((110vw - 320px) / (1800 - 320))) solid white;
   }
