@@ -13,11 +13,30 @@ body {
     position: relative;
 }
 
+.my_a:link {
+    text-decoration: none;
+    color: white;
+}
+
+.my_a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.my_a:active {
+    text-decoration: none;
+    color: white;
+}
+.my_a:hover {
+    text-decoration: none;
+    color: white;
+}
+
 .upward {
     color: violet;
     background-color: black;
     position: fixed;
-    bottom: 40px;
+    bottom: 700px;
     right: 40px;
     width: 50px;
     height: 50px;
@@ -27,10 +46,11 @@ body {
     cursor: pointer;
     visibility: hidden;
     opacity: 0;
-    transition: 0.5s;
+    transition: 1s;
 }
 
 .upward.active {
+    bottom: 40px;
     visibility: visible;
     opacity: 1;
 }
@@ -62,6 +82,10 @@ p {
     border-right: 2px ridge black;
     font-weight: bolder;
     font-size: calc(4px + (25 - 4) * ((110vw - 320px) / (1800 - 320)));
+}
+
+.name p {
+    font-weight: 700;
 }
 
 .btn {
@@ -213,25 +237,6 @@ span {
     margin-left: calc(50px + (300 - 50) * ((110vw - 320px) / (1800 - 320)));
 }
 
-.my_a:link {
-    text-decoration: none;
-    color: white;
-}
-
-.my_a:visited {
-    text-decoration: none;
-    color: white;
-}
-
-.my_a:active {
-    text-decoration: none;
-    color: white;
-}
-.my_a:hover {
-    text-decoration: none;
-    color: white;
-}
-
 .label_1 {
     position: absolute;
     margin-left: calc(17px + (100 - 17) * ((110vw - 320px) / (1800 - 320)));
@@ -286,7 +291,7 @@ span {
     position: relative;
     width: 0; /*700*/
     height: 0;
-    margin-top: calc(45px + (270 - 45) * ((110vw - 320px) / (1800 - 320))); /*70*/
+    margin-top: calc(35px + (270 - 35) * ((110vw - 320px) / (1800 - 320))); /*70*/
     padding-left: calc(18px + (110 - 18) * ((110vw - 320px) / (1800 - 320)));
 }
 
@@ -504,9 +509,12 @@ span {
 }
 
 .foto_list {
+    position: relative;
+    width: calc(233px + (1400 - 233) * ((110vw - 320px) / (1800 - 320)));
+    margin: 0 calc(15px + (70 - 15) * ((110vw - 320px) / (1800 - 320)));
     display: inline-block;
     background-color: white;
-    margin-left: calc(12px + (70 - 12) * ((110vw - 320px) / (1800 - 320)));
+    /*margin-left: calc(12px + (70 - 12) * ((110vw - 320px) / (1800 - 320)));*/
 }
 
 .portfolio {
