@@ -74,7 +74,7 @@ p {
 .name {
     float: left;
     width: 30%;
-    height: calc(11px + (65 - 11) * ((110vw - 320px) / (1800 - 320)));
+    height: calc(20px + (120 - 20) * ((110vw - 320px) / (1800 - 320)));
     padding: 0;
     text-align: center;
     border-bottom: 2px ridge black;
@@ -85,14 +85,19 @@ p {
 }
 
 .name p {
-    font-weight: 700;
+    margin-top: calc(7px + (40 - 7) * ((110vw - 320px) / (1800 - 320)));
+    font-weight: bold;
 }
 
 .btn {
-    height: calc(11px + (65 - 11) * ((110vw - 320px) / (1800 - 320)));
+    height: calc(20px + (120 - 20) * ((110vw - 320px) / (1800 - 320)));
     border-bottom: 2px ridge black;
     border-top: 2px ridge black;    
     text-align: center;
+}
+
+.btn p {
+    margin-top: calc(7px + (40 - 7) * ((110vw - 320px) / (1800 - 320)));
 }
 
 .btn1, .btn2, .btn3, .btn4 {
@@ -102,8 +107,8 @@ p {
     font-size: calc(3px + (15 - 3) * ((110vw - 320px) / (1800 - 320)));
     background-color: black;
     color: white;
-    height: calc(4px + (25 - 4) * ((110vw - 320px) / (1800 - 320)));
-    border-radius: calc(4px + (25 - 4) * ((110vw - 320px) / (1800 - 320))); 
+    height: calc(6px + (35 - 6) * ((110vw - 320px) / (1800 - 320)));
+    border-radius: calc(3px + (20 - 3) * ((110vw - 320px) / (1800 - 320))); 
     border: none;
     transition-duration: 0.5s;
 }
@@ -222,9 +227,9 @@ span {
 .my_text{
     color: white;
     margin-left: calc(117px + (700 - 117) * ((110vw - 320px) / (1800 - 320)));
-    margin-top: calc(8px + (50 - 8) * ((110vw - 320px) / (1800 - 320)));
+    margin-top: calc(3px + (100 - 3) * ((110vw - 320px) / (1800 - 320)));
     text-indent: calc(4px + (25 - 4) * ((110vw - 320px) / (1800 - 320)));
-    font-size: calc(3px + (18 - 3) * ((110vw - 320px) / (1800 - 320)));
+    font-size: calc(6px + (30 - 6) * ((110vw - 320px) / (1800 - 320)));
 }
 
 /*БЛОК С ДАТАМИ И СОБЫТИЯМИ*/
@@ -558,7 +563,7 @@ span {
 
 .faq_item {
     border-top: 2px solid black;
-    font-size: calc(5px + (30 - 5) * ((110vw - 320px) / (1800 - 320)));
+    font-size: calc(10px + (30 - 10) * ((110vw - 320px) / (1800 - 320)));
 }
 
 .faq_input {
@@ -599,7 +604,7 @@ span {
 .faq_text {
     display: none;
     padding: calc(2px + (10 - 2) * ((110vw - 320px) / (1800 - 320))) calc(3px + (10 - 3) * ((110vw - 320px) / (1800 - 320)));
-    font-size: calc(3px + (20 - 3) * ((110vw - 320px) / (1800 - 320)));
+    font-size: calc(7px + (20 - 7) * ((110vw - 320px) / (1800 - 320)));
 }
 
 
